@@ -31,6 +31,6 @@ jobs:
 
       - name: Launch emulator
         run: |
-          avdmanager list device 
+          avdmanager create avd -n MyPixel4AVD -k "system-images;android-33;google_apis;x86_64" -d "pixel_4"
           chmod +x ./start_emu_headless.sh
           EMULATOR_TIMEOUT=$EMULATOR_TIMEOUT EMULATOR_NAME=$EMULATOR_NAME ./start_emu_headless.sh
