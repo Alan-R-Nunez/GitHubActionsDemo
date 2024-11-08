@@ -96,7 +96,7 @@ function hidden_policy() {
 };
 
 launch_emulator
-sleep 2
+sleep 1
 disable_animation
 sleep 1
 hidden_policy
