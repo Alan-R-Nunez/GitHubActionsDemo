@@ -31,6 +31,6 @@ jobs:
 
       - name: Launch emulator
         run: |
-          adb devices 
+          avdmanager list device 
           chmod +x ./start_emu_headless.sh
           EMULATOR_TIMEOUT=$EMULATOR_TIMEOUT EMULATOR_NAME=$EMULATOR_NAME ./start_emu_headless.sh
