@@ -27,7 +27,7 @@ function check_hardware_acceleration() {
         fi
     fi
 
-    echo "$hw_accel_flag"
+    echo "Hardware accelaration: $hw_accel_flag"
 }
 
 hw_accel_flag=$(check_hardware_acceleration)
